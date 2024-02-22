@@ -1,0 +1,46 @@
+.app__flex {
+    justify-content: flex-start;
+}
+
+.app__about {
+    justify-content: flex-start;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app__profiles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+
+}
+
+.app__profile-item {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2rem;
+
+    p {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 2000px) {
+        width: 100%;
+        margin: 2rem 4rem;
+        
+        p {
+            text-align: justify;
+            font-size: 24px;
+        }
+  
+    }
+}

@@ -68,3 +68,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+To Deploy front end UI:
+
+"npm run build"
+
+A folder named "build" will be created in the frontend-react folder.
+Go to Netlify, Add new site, drag and drop the build folder into the new site.
+Site name, can be edited in the Netlify.
+
+To deploy Sanity CMS:
+
+go to backend-sanity folder.
+
+Run "sanity manage"
+
+This will open management tools.
+
+Go to API, copy the current domain name (one deployed in netlify).
+
+paste that in the CORS origins and click save.
