@@ -25,6 +25,7 @@ import about04 from '../assets/about04.png';
 
 import profile from '../assets/profile.png';
 import person from '../assets/person.png';
+import lakshman from '../assets/lakshman.png'
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 
@@ -62,6 +63,7 @@ export default {
   about04,
   profile,
   person,
+  lakshman,
   circle,
   logo,
   adidas,
