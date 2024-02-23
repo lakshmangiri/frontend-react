@@ -7,6 +7,12 @@ import './Footer.scss';
 
 const Footer = () => {
 
+  const emailId = process.env.REACT_APP_MY_EMAIL_ID;
+  const phoneNum = '+44 ' + process.env.REACT_APP_MY_PHONE_NUMBER
+
+  console.log(emailId);
+
+
   const [formData, setFormData] = useState({ name: '', email: '', message: ''});
   const [ isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [ isLoading, setIsLoading] = useState(false);
@@ -44,14 +50,14 @@ const Footer = () => {
       <div className='app__footer-cards'>
         <div className='app__footer-card'>
           <img src={images.email} alt="email" />
-          <a href="mailto:lakshmangiri98@gmail.com" className='p-text'>
-            lakshmangiri98@gmail.com
+          <a href={`mailto:${emailId}`} className='p-text'>
+            {emailId}
           </a>
         </div>
         <div className='app__footer-card'>
           <img src={images.mobile} alt="email" />
-          <a href="tel: +44 7833826889" className='p-text'>
-            +44 1234567890
+          <a href={`tel:${phoneNum}`} className='p-text'>
+            {phoneNum}
           </a>
         </div>
       </div>

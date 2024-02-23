@@ -28,6 +28,7 @@ const About = () => {
             transition={{ duration: 0.5, type: 'tween'}}
             className='app__profile-item'
             key={about.title + index}>
+              <h2 className='bold-text'>Hello Mate!</h2>
               <p className='p-text' style={{marginTop: '10px'}}>
                 {about.description}
               </p>

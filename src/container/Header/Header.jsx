@@ -6,16 +6,6 @@ import './Header.scss';
 
 const Header = () => {
 
-  const scaleVariants = {
-    whileInView: {
-      scale: [0, 1],
-      opacity: [0, 1],
-      transition: {
-        duration: 1,
-        ease: 'easeInOut'
-      }
-    }
-  }
   return (
     <div  className="app__header app__flex">
     <motion.div
@@ -41,25 +31,9 @@ const Header = () => {
        whileInView={{ opacity: [0, 1] }}
        transition={{ duration: 0.5, delayChildren: 0.5 }}
        className='app__header-img'>
-        <img src={images.profile} alt="profile_bg" />
-        {/* <motion.img
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 1, ease: 'easeInOut' }}
-          className='overlay_circle'
-          src={images.circle}
-          alt="profile_circle" /> */}
+        <img src={images.person} alt="person_bg" />
       </motion.div>
 
-      {/* <motion.div
-        variants={scaleVariants}
-        whileInView={scaleVariants.whileInView}
-        className='app__header-circles'>
-          {[images.flutter, images.redux, images.sass].map((circle, index) => 
-          <div className='circle-cmp app__flex' key={`circle-${index}`}>
-            <img src={circle} alt="circle" />
-          </div>)}
-        
-        </motion.div> */}
     </div>
   )
 }
