@@ -10,12 +10,16 @@ const SocialMedia = () => {
             <FaLinkedin />
           </div>
         </a>
-        <div>
-            <BsTwitter />
-        </div>
+        <a href="https://twitter.com/lakshmangiri" target="_blank" rel="noopener noreferrer">
+          <div>
+              <BsTwitter />
+          </div>
+        </a>
+        <a href="https://www.instagram.com/lakshmanb15/" target="_blank" rel="noopener  noreferrer">
         <div>
             <BsInstagram />
         </div>
+        </a>
     </div>
   )
 }

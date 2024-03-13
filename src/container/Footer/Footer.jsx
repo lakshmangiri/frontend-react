@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { images } from '../../constants';
 import { AppWrapper, MotionWrapper } from '../../wrapper';
 import { client } from '../../client';
@@ -9,9 +9,6 @@ const Footer = () => {
 
   const emailId = process.env.REACT_APP_MY_EMAIL_ID;
   const phoneNum = '+44 ' + process.env.REACT_APP_MY_PHONE_NUMBER
-
-  console.log(emailId);
-
 
   const [formData, setFormData] = useState({ name: '', email: '', message: ''});
   const [ isFormSubmitted, setIsFormSubmitted] = useState(false);
