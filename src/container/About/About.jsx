@@ -27,7 +27,7 @@ const About = () => {
         transition={{ duration: 0.5, type: 'tween'}}
         >
       {abouts.map((about) => (
-          <div class="app__profiles-item">
+          <div class="app__profile-item">
             <p className='p-text' style={{marginTop: '10px'}}>
                 {about.description}
             </p>
