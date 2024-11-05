@@ -27,7 +27,7 @@ const About = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: 'tween'}}
             className='app__profile-item'
-            key={about.title + index}>
+            key={about}>
               <h2 className='bold-text'>Hello Mate!</h2>
               <p className='p-text' style={{marginTop: '10px'}}>
                 {about.description}
