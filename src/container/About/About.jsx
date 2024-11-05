@@ -25,7 +25,7 @@ const About = () => {
         whileInView={{ opacity: 1}}
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.5, type: 'tween'}}
-        key={about}>
+        >
       {abouts.map((about) => (
           <p className='p-text' style={{marginTop: '10px'}}>
               {about.description}
