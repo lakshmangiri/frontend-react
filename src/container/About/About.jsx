@@ -21,7 +21,6 @@ const About = () => {
         <span>About</span> 
       </h2>
       <motion.div className='app__profiles'>
-        <h2 className='bold-text'>Hello Mate!</h2>
       {abouts.map((about) => (
         <motion.div
             whileInView={{ opacity: 1}}
