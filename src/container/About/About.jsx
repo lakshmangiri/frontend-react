@@ -31,6 +31,9 @@ const About = () => {
             <p className='p-text' style={{marginTop: '10px'}}>
                 {about.description}
             </p>
+            <p>
+              Thank you for visiting my platform. I'm excited to share my journey and insights with you. I hope you find my work and interests as engaging as I do!
+            </p>
           </div>
       ))}
       </motion.div>
