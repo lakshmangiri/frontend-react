@@ -27,15 +27,17 @@ const About = () => {
         transition={{ duration: 0.5, type: 'tween'}}
         >
       {abouts.map((about) => (
-          <div class="app__profile-item">
+          <div className="app__profile-item">
             <p className='p-text' style={{marginTop: '10px'}}>
                 {about.description}
             </p>
           </div>
       ))}
-         <p className='p-text' style={{marginTop: '10px'}}>
+        <div className="app__profile-item">
+            <p className='p-text' style={{marginTop: '10px'}}>
               Thank you for visiting my platform. I'm excited to share my journey and insights with you. I hope you find my work and interests as engaging as I do!
             </p>
+        </div>
       </motion.div>
     </>
   )
