@@ -21,7 +21,7 @@ const About = () => {
         <span>About</span> 
       </h2>
       <div className='app__profiles'>
-        {abouts.map((about, index) => (
+        {abouts.map((about) => (
           <motion.div
             whileInView={{ opacity: 1}}
             whileHover={{ scale: 1.1 }}
