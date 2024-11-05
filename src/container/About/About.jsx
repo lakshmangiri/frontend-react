@@ -20,18 +20,16 @@ const About = () => {
       <h2 className='head-text'>
         <span>About</span> 
       </h2>
-      <motion.div className='app__profiles'>
+      <motion.div 
+        className='app__profiles'
+        whileInView={{ opacity: 1}}
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.5, type: 'tween'}}
+        key={about}>
       {abouts.map((about) => (
-        <motion.div
-            whileInView={{ opacity: 1}}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: 'tween'}}
-            className='app__profile-item'
-            key={about}>
           <p className='p-text' style={{marginTop: '10px'}}>
-                {about.description}
-              </p>
-          </motion.div>
+              {about.description}
+          </p>
       ))}
       </motion.div>
     </>
