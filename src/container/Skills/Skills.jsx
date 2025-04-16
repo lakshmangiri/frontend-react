@@ -13,8 +13,7 @@ const Skills = () => {
 
   useEffect(() => {
     const query = '*[_type == "experiences"]';
-    const skillsQuery = '*[_type == "skills"]';
-
+    const skillsQuery = '*[_type == "skills"] | order(_updatedAt desc)';
 
     client.fetch(query).then((data) => {
       setExperiences(data);
