@@ -23,7 +23,7 @@ const Header = () => {
           </span>
           <p className="p-text">Hello, I'm</p>
           <h1 className='head-text'>Lakshmanan</h1>
-          <p className="p-text">Software Engineer @ Raytec | DevOps Enthusiast | Newcastle University Alumni</p>
+          <p className="p-text">Software Design Engineer @ Raytec | DevOps and Gen AI Enthusiast | Newcastle University alumnus</p>
         </div>
       </motion.div>
 
